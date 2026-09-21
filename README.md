@@ -39,7 +39,7 @@ The script saves credentials locally; it does not export `FLUID_AGENT_KEY` into 
 - [Machine-readable setup guide](https://fluidnative.com/docs.md)
 - [Developer Documentation (Agentic/human)](https://fluidnative.com/docs#tools)
 - [Fluid agent skills](https://github.com/fluidbase9/fluid-wallet-skills)
-- [Browser fallback / key management](https://fluidnative.com/agentic-keys) — for browser-only clients or a user-selected browser flow.
+- [Browser registration / pairing](https://fluidnative.com/agents/start) — verified sign-in and read-only agent access. Existing key-management instructions remain at /agentic-keys.
 
 Optional `--with-pauli` remains interactive and requires selected scopes, spending limits, and expiry. Discovering these instructions does not authorize setup or transactions; follow the user's request and available tool permissions.
 
