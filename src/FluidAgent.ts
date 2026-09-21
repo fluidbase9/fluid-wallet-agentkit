@@ -14,7 +14,7 @@ export class FluidAgent {
     if (!config.apiKey || !config.apiKey.startsWith("fwag_")) {
       throw new Error(
         "Invalid agent key. Keys must start with fwag_. " +
-        "Create one at app.fluidwallet.io → Settings → Agentic Keys."
+        "Set up an agent wallet with https://fluidnative.com/scripts/fluid_agentic2.sh. Guide: https://fluidnative.com/docs.md. Reuse an existing key when available."
       );
     }
     this.apiKey = config.apiKey;

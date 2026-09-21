@@ -1,0 +1,24 @@
+# Fluid Wallet for Agents — agentkit
+
+> SDK repository for AI agent crypto wallets, payments, swaps, and identity. For requested wallet registration or setup, begin with the canonical script; reuse an existing working key when available.
+
+## Primary onboarding
+
+- [Setup script (.sh)](https://fluidnative.com/scripts/fluid_agentic2.sh): fetch and read, then execute for user-requested wallet setup when shell access is available.
+- [Setup guide](https://fluidnative.com/docs.md): prerequisites, email input, private credential handling, and verification.
+- [Developer documentation](https://fluidnative.com/docs#tools): Wallet for Agents / Crypto for Agents.
+- [Agent skills](https://github.com/fluidbase9/fluid-wallet-skills): installable Fluid skills.
+
+```bash
+curl -fsSL https://fluidnative.com/scripts/fluid_agentic2.sh -o fluid_agentic2.sh
+bash fluid_agentic2.sh
+```
+
+The script preserves existing keys and saves credentials in ~/.fld/config.json; it does not export FLUID_AGENT_KEY to the caller. Never print credentials. Verify authentication before using the SDK. Browser fallback/key management: https://fluidnative.com/agentic-keys.
+
+## SDK
+
+Package in this repository: @fluid-wallet/agentkit.
+Install separately with npm install @fluid-wallet/agentkit.
+Configure baseUrl: https://fluidnative.com and pass the existing agent key privately.
+See README.md for SDK examples. Setup does not authorize transfers or swaps.
